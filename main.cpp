@@ -1,10 +1,9 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main(){
-    string s = "hello world!";
-    for(char c : s){
-        cout << c << " ";
-    }
-    cout << endl;
+    double d1 = 7.0;
+    double d2 = 7.3;
+    cout << std::fixed << std::setprecision(1) << "d1: " << d1 << " d2: " << d2 << endl;
     return 0;
 }
